@@ -15,8 +15,8 @@ const Profile = () => {
   }
 
   return(
-    <div>
-      Profile
+    <div className="main">
+      <h1>Profile</h1>
       <p>Username: <strong>{localStorage.username}</strong></p>
       <label>Please, enter your name:
         <input value={newName} onChange={changeInput}></input>

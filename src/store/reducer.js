@@ -5,10 +5,7 @@ import {
 
 const initialState = {
   username: localStorage.getItem("username"),
-  messages: [{
-      text: '',
-      authorId: ''
-  }]
+  messages: []
 }
 
 export default function appReducer(state = initialState, action) {
