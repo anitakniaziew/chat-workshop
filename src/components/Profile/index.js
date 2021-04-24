@@ -21,7 +21,7 @@ const Profile = () => {
       <label>Please, enter your name:
         <input value={newName} onChange={changeInput}></input>
       </label>
-      <button onClick={handleSubmit}>Save</button>
+      <button onClick={handleSubmit} className="primary">Save</button>
     </div>
   )
 }

@@ -48,7 +48,7 @@ return (
           <label>Please, enter your message: 
           <input value={text} onChange={handleTextChange} type="text"></input>
           </label>
-          <button onClick={handleSubmit}>Send</button>
+          <button onClick={handleSubmit} className="primary">Send</button>
       </div>
       <div className={styles.messageList}>
         <div className={styles.messageListLabel}>
