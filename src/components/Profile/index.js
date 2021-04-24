@@ -8,7 +8,7 @@ const Profile = () => {
   const dispatch = useDispatch();
 
   const changeInput = (event) => changeName(event.target.value);
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     changeName('');
     dispatch(changeUsername(newName));
     localStorage.setItem("username", newName);

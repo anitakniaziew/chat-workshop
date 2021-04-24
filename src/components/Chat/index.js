@@ -28,7 +28,6 @@ const Chat = () => {
   }
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     changeText('');
     connectionChat.emit("chat message", {
       text: text,
@@ -45,10 +44,10 @@ return (
     {connectionChat ?     
       (<>
       <div>
-          <label>Please, enter your message: 
-          <input value={text} onChange={handleTextChange} type="text"></input>
-          </label>
-          <button onClick={handleSubmit} className="primary">Send</button>
+        <label>Please, enter your message: 
+        <input value={text} onChange={handleTextChange} type="text"></input>
+        </label>
+        <button onClick={handleSubmit} className="primary">Send</button>
       </div>
       <div className={styles.messageList}>
         <div className={styles.messageListLabel}>
